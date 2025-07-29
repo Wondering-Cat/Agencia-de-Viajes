@@ -37,4 +37,4 @@ $conn->close();
 ?>
 <br>
 <a href='form_busqueda_vuelos.html'><button>Volver a la Búsqueda</button></a>
-<a href='../index.html'><button>Volver al Inicio</button></a>
+<a href='../index.html'><button>Volver al  Inicio</button></a>
