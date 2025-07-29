@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Vuelo</title>
+    <script>
+        function validarVuelo() {
+            let origen = document.getElementById("origen").value;
+            let destino = document.getElementById("destino").value;
+            if (origen === destino) {
+                alert("Origen y destino no pueden ser iguales.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h2>Registrar nuevo vuelo</h2>
+    <form action="insertar_vuelo.php" method="post" onsubmit="return validarVuelo();">
+        Origen: <input type="text" name="origen" id="origen" required><br>
+        Destino: <input type="text" name="destino" id="destino" required><br>
+        Fecha: <input type="date" name="fecha" required><br>
+        Plazas disponibles: <input type="number" name="plazas_disponibles" required><br>
+        Precio: <input type="number" step="0.01" name="precio" required><br>
+        <input type="submit" value="Registrar Vuelo">
+    </form>
+</body>
+</html>

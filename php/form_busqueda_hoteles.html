@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Hoteles</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buscar Hoteles Disponibles</h1>
+        <form action="buscar_hoteles.php" method="GET" class="busqueda-form">
+            <div class="form-group">
+                <label for="ubicacion">Ubicación del Hotel:</label>
+                <input type="text" id="ubicacion" name="ubicacion" required>
+            </div>
+            <div class="form-group">
+                <label for="habitaciones">Habitaciones mínimas disponibles:</label>
+                <input type="number" id="habitaciones" name="habitaciones" min="1" required>
+            </div>
+            <input type="submit" value="Buscar Hoteles">
+        </form>
+        <br>
+        <a href="../index.html"><button class="ir-formulario">Volver al Inicio</button></a>
+    </div>
+</body>
+</html>

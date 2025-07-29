@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar al Carrito</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Agregar Paquete al Carrito</h2>
+        <form action="agregar_carrito.php" method="post" class="viaje-form">
+            <label>Destino:
+                <input type="text" name="destino" required>
+            </label>
+            <label>Hotel:
+                <input type="text" name="hotel" required>
+            </label>
+            <label>Precio (USD):
+                <input type="number" name="precio" required>
+            </label>
+            <input type="submit" value="Agregar al carrito">
+        </form>
+    </div>
+</body>
+</html>
